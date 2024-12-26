@@ -1,4 +1,4 @@
-import { Modifier } from "./modifier"
+import { Modifier } from "./Modifier"
 
 export enum EnhancementVariant {
     BONUS = 'bonus',

@@ -1,3 +1,8 @@
-import { BoardState, ValidHand } from "./types"
+import { ACE_OF_SPADES } from "./constants/BaseCards"
+import { BoardState, PlaybleHand } from "./types"
 
-// const startingHand: ValidHand = [{rank: RA}]
+const startingHand: PlaybleHand = [ACE_OF_SPADES]
+
+const currBoard = new BoardState(startingHand)
+
+console.log('testing ', currBoard.isHighCard())

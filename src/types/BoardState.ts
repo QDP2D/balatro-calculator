@@ -1,6 +1,6 @@
 import { PlayingCard } from ".";
 
-export type ValidHand = [] 
+export type PlaybleHand = [] 
     | [PlayingCard] 
     | [PlayingCard, PlayingCard]
     | [PlayingCard, PlayingCard, PlayingCard]
@@ -8,12 +8,16 @@ export type ValidHand = []
     | [PlayingCard, PlayingCard, PlayingCard, PlayingCard, PlayingCard]
 
 export class BoardState {
-    cardsInPlay: ValidHand
+    cardsInPlay: PlaybleHand
     // cardsInHand: Array<PlayingCards>
 
 
-    constructor(initialCardsInPlay: ValidHand = []) {
+    constructor(initialCardsInPlay: PlaybleHand = []) {
         this.cardsInPlay = initialCardsInPlay
+    }
+
+    isHighCard() {
+        if (this.cardsInPlay.length === 1) return true
     }
 
 }
