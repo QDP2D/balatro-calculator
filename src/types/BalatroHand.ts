@@ -29,7 +29,7 @@ export class BalatroHand {
         if (this.cardsInHand.length === 2) {
             this.cardsInHand[0].rank === this.cardsInHand[1].rank
                 ? this.handType = PAIR 
-                : HIGH_CARD
+                : this.handType = HIGH_CARD
             return
         }
     }
