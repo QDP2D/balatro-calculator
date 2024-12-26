@@ -1,4 +1,4 @@
-import { Rank, Suit } from "."
+import { Rank, Suit } from ".."
 
 export interface PlayingCard {
     rank: Rank
