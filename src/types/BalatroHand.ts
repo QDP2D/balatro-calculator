@@ -18,6 +18,10 @@ export class BalatroHand {
     }
 
     evaluateHand() {
+        if (this.cardsInHand.length === 0) {
+            this.handType = null
+            return
+        }
         if (this.cardsInHand.length === 1) { 
             this.handType = HIGH_CARD
             return
