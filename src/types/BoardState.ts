@@ -1,11 +1,4 @@
-import { PlayingCard } from ".";
-
-export type PlaybleHand = [] 
-    | [PlayingCard] 
-    | [PlayingCard, PlayingCard]
-    | [PlayingCard, PlayingCard, PlayingCard]
-    | [PlayingCard, PlayingCard, PlayingCard, PlayingCard]
-    | [PlayingCard, PlayingCard, PlayingCard, PlayingCard, PlayingCard]
+import { PlaybleHand, PlayingCard } from ".";
 
 export class BoardState {
     cardsInPlay: PlaybleHand
