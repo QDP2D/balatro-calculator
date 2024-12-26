@@ -1,15 +1,19 @@
 import { PlayingCard } from ".";
 
-type ValidHand = [] | [PlayingCard] | [PlayingCard, PlayingCard]| [PlayingCard, PlayingCard, PlayingCard]| [PlayingCard, PlayingCard, PlayingCard, PlayingCard]| [PlayingCard, PlayingCard, PlayingCard, PlayingCard, PlayingCard]
+export type ValidHand = [] 
+    | [PlayingCard] 
+    | [PlayingCard, PlayingCard]
+    | [PlayingCard, PlayingCard, PlayingCard]
+    | [PlayingCard, PlayingCard, PlayingCard, PlayingCard]
+    | [PlayingCard, PlayingCard, PlayingCard, PlayingCard, PlayingCard]
 
 export class BoardState {
     cardsInPlay: ValidHand
+    // cardsInHand: Array<PlayingCards>
+
 
     constructor(initialCardsInPlay: ValidHand = []) {
         this.cardsInPlay = initialCardsInPlay
     }
 
-    evaluateHand() {
-
-    }
 }
